@@ -1,0 +1,38 @@
+Source: xdg-desktop-portal-gtk
+Section: admin
+Priority: optional
+Maintainer: Mario Sanchez Prada <mario@endlessm.com>
+Build-Depends: debhelper (>= 9),
+	dh-autoreconf,
+	dbus,
+	dbus-x11,
+	debhelper (>= 9),
+	dh-autoreconf,
+	dh-exec,
+	docbook-xml,
+	docbook-xsl,
+	docbook-xsl-doc-html,
+	gobject-introspection,
+	gtk-doc-tools,
+        libflatpak-dev,
+	libglib2.0-dev,
+	libxml2-utils,
+        xdg-desktop-portal,
+	xsltproc,
+	pkg-config
+Standards-Version: 3.8.0
+Homepage: http://www.endlessm.com
+
+Package: xdg-desktop-portal-gtk
+Architecture: any
+Depends: ${misc:Depends},
+         ${shlibs:Depends}
+Description: A backend implementation for xdg-desktop-portal that is using GTK+.
+ .
+ This package contains the binary xdg-desktop-portal-gtk owning the D-Bus name
+ org.freedesktop.impl.portal.desktop.gtk, which is the GTK+ backend to the implementation
+ of the different desktop portals implemented by flatpak, so that sandboxed
+ applications can access certain services from the host machine.
+ .
+ Besides, it also contains the definition of the different interfaces that
+ will be implemented by both the frontend and the backends of those portals.
