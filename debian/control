@@ -30,9 +30,5 @@ Depends: ${misc:Depends},
 Description: A backend implementation for xdg-desktop-portal that is using GTK+.
  .
  This package contains the binary xdg-desktop-portal-gtk owning the D-Bus name
- org.freedesktop.impl.portal.desktop.gtk, which is the GTK+ backend to the implementation
- of the different desktop portals implemented by flatpak, so that sandboxed
- applications can access certain services from the host machine.
- .
- Besides, it also contains the definition of the different interfaces that
- will be implemented by both the frontend and the backends of those portals.
+ org.freedesktop.impl.portal.desktop.gtk, which is the GTK+ backend implementing
+ the different desktop portals implemented by flatpak.
